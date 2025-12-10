@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Pain</title>
+    <link rel="stylesheet" href="src/style/master.css">
+    <link rel="stylesheet" href="src/style/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <header class="fixed  z-10 w-full  header">
+            <nav class="w-full  flex justify-center  items-center pb-3 lg:pt-6 ">
+
+                <ul
+                    class="menubar *:bg-white *:border-2 w-full flex flex-col lg:flex-row lg:w-[99%] h-auto lg:h-[50px] px-5 lg:*:justify-center">
+
+                    <!-- فقط دسکتاپ -->
+                    <li class="hidden lg:flex lg:w-[105px] border-b-amber-400 menu items-center text-center">Home</li>
+                    <li class="hidden lg:flex lg:w-[105px] menu items-center text-center">Atelier</li>
+                    <li class="hidden lg:flex lg:w-[105px] menu items-center text-center">Magazine</li>
+                    <li class="hidden lg:flex lg:w-[100px] menu items-center text-center">Franchise</li>
+
+                    <!-- تیتر (موبایل فول عرض / دسکتاپ وسط) -->
+                    <li
+                        class="w-full h-[50px] lg:w-[650px] mt-4 titr text-center flex flex-col items-center py-4 lg:mt-0">
+                        <span class="title font-extrabold">LE PAIN QUOTIDIEN</span>
+                        <span class="subtitle font-sans">Le Pain Quotidien means The Daily Bread</span>
+                    </li>
+
+                    <!-- ✅ دسکتاپ: Menu → OrderOnline → Locations کنار هم -->
+                    <li class="hidden lg:flex lg:w-[105px] menu items-center text-center">Menu</li>
+                    <li class="hidden lg:flex lg:w-[150px] menu items-center text-center">OrderOnline</li>
+                    <li class="hidden lg:flex lg:w-[150px] menu items-center text-center">Locations</li>
+                    <div class="flex w-full lg:hidden relative items-center">
+                        <!-- Left: Menu -->
+                        <div class="flex-1 flex justify-center items-center border-r border-gray-300">
+                            <li id="mobileMenuBtn" class="cursor-pointer py-2 flex items-center gap-2">
+                                <div class="flex flex-col justify-between h-4 w-5">
+                                    <span class="block h-0.5 w-full bg-black"></span>
+                                    <span class="block h-0.5 w-full bg-black"></span>
+                                    <span class="block h-0.5 w-full bg-black"></span>
+                                </div>
+                                Menu
+                            </li>
+
+                        </div>
+
+
+                        <div class="flex-1 flex justify-center items-center">
+                            <li class="py-2">Locations</li>
+                        </div>
+
+
+                        <div id="mobileMenu"
+                            class="fixed inset-0 bg-white z-50 transform scale-y-0 origin-top transition-transform duration-300 flex flex-col">
+
+                            <button id="closeMobileMenu"
+                                class="absolute top-4 left-4 text-3xl font-bold">&times;</button>
+
+                            <!-- Menu Items -->
+                            <ul class="flex flex-col items-center justify-center flex-1 gap-8 text-2xl font-semibold">
+                                <li class="cursor-pointer">Home</li>
+                                <li class="cursor-pointer">Atelier</li>
+                                <li class="cursor-pointer">Magazine</li>
+                                <li class="cursor-pointer">Franchise</li>
+                                <li class="cursor-pointer">Menu</li>
+                                <li class="cursor-pointer">Order Online</li>
+                                <li class="cursor-pointer">Locations</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </ul>
+
+            </nav>
+        </header>
+        <!-- ///////////////////////////////////////end header///////////////////////////////////// -->
+        <section class="section1 relative h-[200vh] w-full bg-cover bg-center bg-fixed overflow-hidden">
+            <div class="bread-img">
+                <img src="src/img/imgi_57_1729681857-tarwe-2kg-front (1).png" alt=""
+                    class="w-full h-auto lg:w-[100wv] lg:h-auto relative top-120 left-0 ">
+            </div>
+            <div class="absolute inset-0 bg-white/40"></div>
+            <!-- متن پارالاکس -->
+            <div id="credits" class="para absolute bottom-8 w-full text-center px-6 
+                text-black leading-tight font-light
+                text-[34px] sm:text-[48px] md:text-[56px] lg:text-[70px]
+                drop-shadow-[0_0_25px_rgba(255,255,255,0.9)]
+                select-none will-change-transform">
+                THIS IS NOT <br> JUST BREAD.<br>
+                THIS IS OUR <br> PHILOSOPHY.<br>
+                IT’S ABOUT TIME.<br>
+                TIME FOR SLOWING <br> DOWN.<br>
+                TIME FOR <br> CONNECTION. <br>
+                ENJOYING SIMPLE <br> PLEASURES.<br>
+                IT’S ABOUT TIME.
+            </div>
+        </section>
+        <!-- ///////////////////////////////////end sec1/////////////////////// -->
+        <section class="section2 bg-[#fbf5ee] ">
+            <div class="para1 w-full lg:w-full flex flex-wrap  ">
+                <div class="text1 w-full lg:w-1/2  m-auto ">
+                    <span
+                        class="w-full block rotate-[-4deg] text-center duration-[0]  text-yellow-500 font-quickbrush mb-0 lg:-mb-9 text-4xl lg:text-5xl">Discover
+                    </span>
+                    <h2 class="font-light lg:mb-2">Our menu dishes</h2>
+                    <p>Food nourishes not only the body, but also the soul. Our new recipes are full of fresh and
+                        seasonal ingredients, pure and honest. To celebrate the flavors of autumn, we are delighted to
+                        present a new selection of bowls, croques, and flatbreads. Please enjoy!</p>
+                    <a href=""><button
+                            class="w-[180px] h-[50px] mx-44 mt-8 cursor-pointer border bg-black text-amber-50 flex justify-center items-center text-center">
+                            see our new menu
+                        </button></a>
+                </div>
+                <img class="image w-full lg:w-1/2  border " src="src/img/imgi_28_1758878219-lpq-v1-2-images-06.jpg"
+                    alt="">
+            </div>
+            <div class="para1 w-full lg:w-full flex flex-wrap  ">
+                <img class="image w-full lg:w-1/2 border " src="src/img/imgi_48_1751035465-catering-table.jpg" alt="">
+                <div class="text1 w-full lg:w-1/2  m-auto ">
+                    <span
+                        class="w-full block rotate-[-4deg] text-center duration-[0]  text-yellow-500 font-quickbrush mb-0 lg:-mb-9 text-4xl lg:text-5xl">Wherever
+                        you need it </span>
+                    <h2 class="font-light lg:mb-2">Catering</h2>
+                    <p>We make catering for groups large or small, easy and stress-free, with delicious, quality meals
+                        delivered right on time, anywhere in Belgium. Enjoy seamless service tailored to your business
+                        needs and simplify your event planning with us. Let us take care of the details, so you can
+                        focus on what matters most.</p>
+                    <a href=""><button
+                            class="w-[180px] h-[50px] mx-44 mt-8 cursor-pointer border bg-black text-amber-50 flex justify-center items-center text-center">
+                            catering
+                        </button></a>
+                </div>
+
+            </div>
+            <div class="para1 w-full lg:w-full flex flex-wrap  ">
+                <div class="text1 w-full lg:w-1/2  m-auto ">
+                    <span
+                        class="w-full block rotate-[-4deg] text-center duration-[0]  text-yellow-500 font-quickbrush mb-0 lg:-mb-9 text-4xl lg:text-5xl">Better
+                        Choice </span>
+                    <h2 class="font-light lg:mb-2">Enjoy the taste of living better</h2>
+                    <p>Enjoy delicious and healthy meals with our Better Choices, created in collaboration with
+                        nutritionist Lut Van Lierde and inspired by the Planetary Health Diet. Each dish meets strict
+                        nutritional criteria, ensuring a perfect balance of flavor and well-being.</p>
+                    <div class="flex ">
+                        <a href=""><button
+                                class="w-[140px] h-[50px] mx-24 mt-8 cursor-pointer border bg-black text-amber-50 flex justify-center items-center text-center">
+                                Learn more
+                            </button></a>
+                        <a href=""><button
+                                class="w-[140px] h-[50px] -mx-20  mt-8 cursor-pointer border bg-white text-black flex justify-center items-center text-center">
+                                view menu
+                            </button></a>
+                    </div>
+                </div>
+                <img class="image w-full  lg:w-1/2 border "
+                    src="src/img/imgi_61_1728919179-blog-post-1-taste-of-living-better_1x1.jpg" alt="">
+            </div>
+            <div class="para1 para-new">
+                <img class="w-full lg:w-1/2 object-cover h-full"
+                    src="src/img/imgi_31_1751891519-2022_10_ruedesarchives_terrasse-2-2.jpg" alt="">
+                <div class="text1 w-full lg:w-1/2 flex flex-col items-center m-auto justify-center px-4">
+                    <span
+                        class="w-full block rotate-[-4deg] text-center text-yellow-500 font-quickbrush mb-0 lg:-mb-9 text-4xl lg:text-5xl">
+                        Welcome home
+                    </span>
+                    <h2 class="font-light lg:mb-2 text-center">Please take <br> your time</h2>
+                    <p class="text-center"> Our restaurants, much like the vibrant community around them, embody a blend
+                        of new and
+                        contemporary design with traditional bakery roots.
+                    </p>
+                    <a href=""><button
+                            class="w-[180px] h-[50px] mx-auto mt-8 cursor-pointer border bg-black text-amber-50 flex justify-center items-center text-center">
+                            Find bakery</button>
+                    </a>
+                </div>
+
+        </section>
+
+        <!-- //////////////////////////end sec2//////////////////////////////////////// -->
+        <section class="section3 bg-[#fbf5ee] pt-52 ">
+            <div class="paragraf w-full h-[230vh]">
+                <div
+                    class="scrolls text-section text1 w-full lg:w-1/2  flex flex-col items-center m-auto justify-center  pt-24  px-4">
+                    <span
+                        class="w-full block rotate-[-4deg] text-center text-yellow-500 font-quickbrush mb-0 lg:-mb-9 text-5xl lg:text-7xl">
+                        Our dishes
+                    </span>
+                    <h2 class="font-light lg:mb-2 text-center">Simple.Fresh.Honet.</h2>
+                    <p class="text-center"> Our menu celebrates natural, honest ingredients, prepared fresh every day.
+                        And at the heart of it all is the bread that brings everything together.
+                    </p>
+                    <a href=""><button
+                            class="w-[220px] h-[50px] mx-auto mt-8 cursor-pointer border bg-black text-amber-50 flex justify-center items-center text-center">
+                            Get Inespired by our menu</button>
+                    </a>
+                </div>
+                <div
+                    class="scrolls text-section w-full h-[400px] *:mt-10  flex flex-nowrap mt-36 overflow-hidden *:lg:relative">
+                    <img src="src/img/imgi_32_1758878219-lpq-v1-2-images-02.jpg" alt="" class="img1 z-0">
+                    <img src="src/img/imgi_28_1758878219-lpq-v1-2-images-06.jpg" alt="" class="img2 z-5">
+                    <img src="src/img/imgi_33_1758878219-lpq-v1-2-images-11.jpg" alt="" class="img1 z-10">
+                    <img src="src/img/imgi_34_1758882358-lpq-v1-2-images-08.jpg" alt="" class="img2 z-15">
+                </div>
+
+                <div
+                    class="scrolls text-section  text2 rel w-full lg:w-1/2  flex flex-col items-center m-auto justify-center  pt-24  px-4">
+
+                    <h2 class="H2 font-light lg:mb-6 text-center relative ">
+                        FOUR INGREDIENTS. <br>
+                        MILLIONS OF LOAVES. <br>
+                        <span class="H2 inline-block relative z-10">ONE TRADITION.</span>
+
+                        <!-- دایره روی خط سوم -->
+                        <span
+                            class=" w-full absolute left-1/2 top-86 -translate-x-1/2 -translate-y-1/2 rotate-[-4deg] text-yellow-500 z-0">
+                            <img src="src/img/imgi_10_highlight.png" class="imagei" alt="">
+                        </span>
+                    </h2>
+
+                    <a href="">
+                        <button
+                            class="w-[180px] h-[50px] -mt-4 -mx-24 cursor-pointer border bg-white text-black flex justify-center items-center text-center absolute z-10 ">
+                            Tour the Atelier
+                        </button>
+                    </a>
+                </div>
+        </section>
+        <!-- ////////////////////////////end sec3/////////////////////////////// -->
+
+        <section class="section4 w-full h-[180vh] bg-[#fbf5ee] ">
+
+            <div class=" relative w-full h-screen ">
+                <video id="myVideo" src="src/vid/bandicam 2025-11-05 17-13-38-262.mp4" loop autoplay muted
+                    class="w-full h-screen object-cover"></video>
+
+                <div class="absolute bottom-5 right-5 flex items-center gap-3 z-10">
+                    <span id="toggleText" class="text-xl text-white font-semibold">Pause</span>
+
+                    <button id="toggleBtn"
+                        class="w-14 h-14 rounded-full border-2 border-black bg-white text-black flex items-center justify-center shadow-xl backdrop-blur-sm">
+                        <i id="btnIcon" class="bi bi-pause-fill text-2xl"></i>
+                    </button>
+                </div>
+                <div class="story">
+                    <h2>
+                        Our stories. <br>
+                        Your stories. <br>
+                        <span class="text-amber-400">History.</span>
+                    </h2>
+                </div>
+            </div>
+
+        </section>
+        <!-- //////////////////////////////////end sec4/////////////////////// -->
+        <section class=" section5 w-full h-[220vh] relative overflow-hidden">
+            <div class="  w-full h-screen flex items-center justify-center pt-8">
+                <figure class="relative w-full h-full overflow-hidden px-6 lg:px-6">
+
+                    <!-- عکس ثابت -->
+                    <img src="src/img/imgi_59_1758878219-lpq-v1-2-images-06.jpg" alt=""
+                        class="w-full h-full object-cover">
+
+                    <!-- باکس متن پایین سمت چپ ثابت روی عکس -->
+                    <a href="#">
+                        <figcaption
+                            class="fig absolute bottom-6 left-6 lg:bottom-8 lg:left-8 z-10  bg-white text-black p-4  border border-black">
+                            <h2 class="font-extralight">Step into our kitchen</h2>
+                            <p class="text-sm mb-2">Our behind-the-scenes videos invite you to watch our chefs at work
+                                as they create new seasonal favorites—sharing every fresh detail and secret touch that
+                                brings...</p>
+                            <span class="font-semibold">Read article</span>
+                        </figcaption>
+                    </a>
+
+                </figure>
+
+            </div>
+            <div class="w-full flex flex-wrap mt-8 ">
+                <div class="w-1/2 h-full">
+                    <figure class="relative w-full h-full overflow-hidden px-6 lg:px-6">
+                        <img src="src/img/imgi_35_1746792466-better-choices-eng-scaled.jpg" alt=""
+                            class="w-full h-full object-cover">
+
+                        <a href="#">
+                            <figcaption class="fig1 bg-white text-black pt-2">
+                                <h2 class="font-extralight">Tasty and nutritious: our “Better Choices!</h2>
+                                <p class="text-sm mb-2">Your well-being is our priority. That’s why we want you to enjoy
+                                    delicious and healthy dishes with us. From now on, you can do this consciously with
+                                    our “Better Choices”.</p>
+                                <span class="font-semibold">Read article</span>
+                            </figcaption>
+                        </a>
+
+                    </figure>
+
+                </div>
+                <div class="w-1/2 h-full ">
+                    <figure class="relative w-full h-full overflow-hidden px-6 lg:px-6">
+
+                        <img src="src/img/imgi_36_1732694639-guillaumezha_lpq_tcsuprisedelight-65.jpg" alt=""
+                            class="w-full h-full object-cover">
+
+                        <a href="#">
+                            <figcaption class="fig1 bg-white text-black pt-2 ">
+                                <h2 class="font-extralight">Relationships forged around a communal table</h2>
+                                <p class="text-sm mb-2 ">Our first communal table on Rue Dansaert in Brussels was made
+                                    out of wood recovered from the floors of Belgian trains that had been taken out of
+                                    service. Those simple planks became a tradition. Today, this same rough, reclaimed
+                                    wood continues to bring rustic comfort to our restaurants, and...</p>
+                                <span class="font-semibold">Read article</span>
+                            </figcaption>
+                        </a>
+
+                    </figure>
+                </div>
+                <a class="w-full mx-6 " href=""><button
+                        class="w-full h-[50px] mx-auto cursor-pointer border bg-white text-black flex justify-center items-center text-center">
+                        Broews full magazine</button>
+                </a>
+            </div>
+        </section>
+        <!-- /////////////////////////////////footer///////////////////// -->
+        <footer class="footer w-full h-[80vh] bg-[#000000]">
+            <div class="w-full h-[260px] flex justify-center items-center">
+                <img src="src/img/download.svg" alt="" class="w-[120px] h-[250px] mt-2">
+            </div>
+            <!-- باکس انتخاب زبان (فقط موبایل) -->
+            <div class="flex justify-center mb-6 md:hidden">
+                <select class="bg-black text-white border border-gray-500 px-3 py-2 rounded">
+                    <option>Belgium - English</option>
+                    <option>Belgium - French</option>
+                    <option>France - French</option>
+                    <option>Netherlands - Dutch</option>
+
+                </select>
+            </div>
+            <footer class="bg-black text-white w-full overflow-hidden">
+                <div class="w-full relative left-0 right-0 ml-0 mr-0 bg-black py-10">
+                    <div
+                        class=" mb-8 max-w-[1400px] mx-auto px-4 md:px-12 lg:px-16 grid grid-cols-1 md:grid-cols-3 gap-14 text-center md:text-center place-items-center md:place-items-center">
+                        <!-- ستون ۱ -->
+                        <ul class="space-y-2 flex flex-col items-center md:items-center -mt-20">
+                            <li class="font-bold mb-4 cursor-default text-amber-400">EXPERIENCE</li>
+                            <li class="relative group w-fit cursor-pointer">Home <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[3px] bg-white group-hover:w-full duration-300"></span>
+                            </li>
+                            <li class="relative group w-fit cursor-pointer">Atelier <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[3px] bg-white group-hover:w-full duration-300"></span>
+                            </li>
+                            <li class="relative group w-fit cursor-pointer">Magazine <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[3px] bg-white group-hover:w-full duration-300"></span>
+                            </li>
+                            <li class="relative group w-fit cursor-pointer">Menu <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[3px] bg-white group-hover:w-full duration-300"></span>
+                            </li>
+                            <li class="relative group w-fit cursor-pointer">Locations <span
+                                    clas="absolute left-0 -bottom-1 w-0 h-[3px] bg-white group-hover:w-full duration-300"></span>
+                            </li>
+                            <li class="relative group w-fit cursor-pointer">Contact <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[3px] bg-white group-hover:w-full duration-300"></span>
+                            </li>
+                        </ul>
+
+                        <!-- ستون ۲ -->
+                        <ul class="space-y-2 flex flex-col items-center md:items-center">
+                            <li class="font-bold mb-4 cursor-default text-amber-400">TARTINE CLUB</li>
+                            <li class="relative group w-fit cursor-pointer">More information <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[3px] bg-white group-hover:w-full duration-300"></span>
+                            </li>
+                            <li class="relative group w-fit cursor-pointer">Android download <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[3px] bg-white group-hover:w-full duration-300"></span>
+                            </li>
+                            <li class="relative group w-fit cursor-pointer">iOS download <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[3px] bg-white group-hover:w-full duration-300"></span>
+                            </li>
+
+                            <li class="font-bold mt-6 mb-2 cursor-default text-amber-400">FOLLOW US</li>
+                            <li class="relative group w-fit cursor-pointer">Facebook <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[3px] bg-white group-hover:w-full duration-300"></span>
+                            </li>
+                            <li class="relative group w-fit cursor-pointer">LinkedIn <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[3px] bg-white group-hover:w-full duration-300"></span>
+                            </li>
+                            <li class="relative group w-fit cursor-pointer">TikTok <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[3px] bg-white group-hover:w-full duration-300"></span>
+                            </li>
+                            <li class="relative group w-fit cursor-pointer">YouTube <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[3px] bg-white group-hover:w-full duration-300"></span>
+                            </li>
+                        </ul>
+
+                        <!-- ستون ۳ -->
+                        <ul class="space-y-2 flex flex-col items-center md:items-center">
+                            <li class="font-bold mb-4 cursor-default text-amber-400">SUPPORT & SERVICES</li>
+                            <li class="relative group w-fit cursor-pointer">Franchise <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[3px] bg-white group-hover:w-full duration-300"></span>
+                            </li>
+                            <li class="relative group w-fit cursor-pointer">Careers <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[3px] bg-white group-hover:w-full duration-300"></span>
+                            </li>
+                            <li class="relative group w-fit cursor-pointer">FAQ <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[3px] bg-white group-hover:w-full duration-300"></span>
+                            </li>
+                            <li class="relative group w-fit cursor-pointer">Allergens <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[3px] bg-white group-hover:w-full duration-300"></span>
+                            </li>
+                            <li class="relative group w-fit cursor-pointer">Accessibility Statement <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[3px] bg-white group-hover:w-full duration-300"></span>
+                            </li>
+                            <li class="font-bold mt-6 mb-2 cursor-default text-amber-400">PLACE YOUR ORDER</li>
+                            <li class="relative group w-fit cursor-pointer">Catering <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[3px] bg-white group-hover:w-full duration-300"></span>
+                            </li>
+                            <li class="relative group w-fit cursor-pointer">Order Online <span
+                                    class="absolute left-0 -bottom-1 w-0 h-[3px] bg-white group-hover:w-full duration-300"></span>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <!-- بخش پایین فوتر -->
+                    <div
+                        class="foot mx-auto lg:h-[100px] flex flex-col md:flex-row justify-between items-center text-sm">
+
+                        <!-- متن کپی‌رایت -->
+                        <span class="mb-2 ml-10 md:mb-0 text-center md:text-left w-full md:w-auto">©2025 Le Pain
+                            Quotidien. All rights reserved.</span>
+
+                        <!-- لینک‌ها -->
+                        <div class="flex items-center lg:mr-36 gap-4 mb-2 md:mb-0 justify-center w-full md:w-auto">
+                            <span>Privacy Policy</span>
+                            <span>·</span>
+                            <span>Cookie Policy</span>
+                        </div>
+
+                        <!-- باکس انتخاب زبان دسکتاپ -->
+                        <div class="hidden md:flex w-auto justify-end mr-14 mt-4">
+                            <select class="bg-black text-white border border-gray-500 px-3 py-2 rounded">
+                                <option>Belgium - English</option>
+                                <option>Belgium - French</option>
+                                <option>France - French</option>
+                                <option>Netherlands - Dutch</option>
+
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+            <div class="hossein">
+                <figure>
+                    <img src="src/img/hossein.saedmokam.png" alt="">
+                    
+                </figure>
+            </div>
+
+    </main>
+    <!-- دایره اسکرول بخش اول  -->
+    <div id="scroll-indicator"
+        class="fixed bottom-6 right-6 z-50 flex items-center gap-2 transition-opacity duration-500">
+        <span class="text-black font-semibold text-lg">scroll</span>
+        <div
+            class="w-[50px] h-[50px] rounded-full bg-white border border-black flex items-center justify-center shadow-md">
+            <i class="bi bi-chevron-down animate-arrow  text-3xl"></i>
+        </div>
+    </div>
+
+</body>
+<script src="src/style/app.js"></script>
+
+</html>
