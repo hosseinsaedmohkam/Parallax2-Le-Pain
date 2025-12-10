@@ -1,5 +1,7 @@
 # Parallax2-Le-Pain
+![Image](https://github.com/user-attachments/assets/c8b8cf59-5659-405d-9f4b-39ab52f6e22d)
 
+![Image](https://github.com/user-attachments/assets/fff41112-db6c-4943-9254-0e7a54c9a602)
 
 [Demo Project](https://hosseinsaedmohkam.github.io/Parallax2-Le-Pain/)
 
